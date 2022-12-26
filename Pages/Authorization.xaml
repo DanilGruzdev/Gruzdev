@@ -1,0 +1,20 @@
+﻿<Page x:Class="Gruzdev.Pages.Authorization"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Gruzdev.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="350"
+      Title="Authorization">
+
+    <Grid>
+        <TextBlock Text="Авторизация" Foreground="#FF498C51" HorizontalAlignment="Center" FontSize="30" FontFamily="Comic Sans MS" Margin=" 0 20 0 0" VerticalAlignment="Top"/>
+        <TextBlock Text="Введите логин:" Foreground="#FF76E383" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 -140 0 0" FontFamily="Comic Sans MS" FontSize="15"/>
+        <TextBox Background="White" VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" Margin="0 -80 0 0" x:Name="UsLog"/>
+        <TextBlock Text="Введите пароль:" Foreground="#FF76E383" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 0" FontFamily="Comic Sans MS" FontSize="15"/>
+        <TextBox Background="White" VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" Margin="0 60 0 0" x:Name="UsPass"/>
+        <Button VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="160" Height="30" x:Name="AuthoBtn" Content="Авторизоваться" Margin="0 80" FontSize="20" FontFamily="Comic Sans MS"  Background="#FF498C51" Click="AuthoBtn_Click"/>
+        <Button VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="160" Height="30" x:Name="SignInGuessBtn" Content="Войти как гость" Margin="0 30" FontSize="20" FontFamily="Comic Sans MS" Background="#FF498C51" Click="SignInGuessBtn_Click"/>
+    </Grid>
+</Page>
